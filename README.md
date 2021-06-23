@@ -20,8 +20,16 @@ usuário não utilizou o app).
 2. Crie um virtualenv com Python 3.5.
 3. Ative o virtualenv.
 4. Instale as dependências.
-6. Execute  python main.py.
-
+6. Execute
+   ```console
+    python main.py {parametro}
+   ```
+    Onde se parametro for 0 vai gerar um relatorio da base tratada em arquivo xlsx na raiz do instalacao
+    Para gerar o grafico devera passar os meses desejados (numeros inteiros de 1 a 12) separados por um espaco.
+    Exemplo: gerar grafico de Maio, junho e julho
+   ```console
+        python main.py 5 6 7
+   ```   
 ```console
 git clone git@github.com:rgrlinux/puc.git puc
 cd puc
